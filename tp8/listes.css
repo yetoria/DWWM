@@ -1,0 +1,21 @@
+body{
+    border: 1px solid;
+    width: 25%;
+
+}
+
+ol{
+    list-style-type: lower-greek;
+}
+
+.def{
+    text-indent: 20px;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.terms{
+    font-variant: small-caps;
+    list-style-type: none;
+    font-weight: bold;
+}  

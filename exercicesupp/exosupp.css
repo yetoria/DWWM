@@ -1,0 +1,10 @@
+#maDiv {
+    background-color: red;
+    width: auto; 
+    height: auto; 
+    transition: background-color 2s; 
+}
+
+#maDiv:hover {
+    background-color: pink;
+}

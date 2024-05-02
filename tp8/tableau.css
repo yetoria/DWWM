@@ -1,0 +1,13 @@
+table td {
+    width: 80px;
+    height: 80px;
+}
+table { 
+    border-collapse: collapse;
+    background-color: aquamarine;
+}
+
+
+td:hover {
+    background-color: red;
+}

@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: radial-gradient(circle, #b8a0a0, #262727);
+}
+
+.homepage-header {
+  text-align: center;
+  margin-right: 300px;
+  font: 1em sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar {
+	background-color: transparent;
+}
+
+.DNMK{
+  color:#262727 !important ;
+}
+
+.description{
+  text-align: justify;
+  font-size: medium;
+}
+
+.header {
+	overflow: hidden;
+	height: 100vh;
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+
+.slider-box1 {
+	width: 30vh;
+	perspective: 1000px;
+	position: relative;
+	top: -17vh; /* height to top */
+	padding-top: 10vh;
+}
+
+.carousel1 {
+	width: 100%;
+	transform-style: preserve-3d;
+	animation: rotate 15s infinite linear; /*  speed:  */
+  margin-top: -100px;
+}
+
+.carousel1 .carousel-item1 {
+	width: 100%;
+	height: 25vh;
+	position: absolute;
+	overflow: hidden;
+}
+
+.it1 {
+	transform: rotateY(0deg) translateZ(50vh);
+}
+.it2 {
+	transform: rotateY(40deg) translateZ(50vh);
+}
+.it3 {
+	transform: rotateY(80deg) translateZ(50vh);
+}
+.it4 {
+	transform: rotateY(120deg) translateZ(50vh);
+}
+.it5 {
+	transform: rotateY(160deg) translateZ(50vh);
+}
+.it6 {
+	transform: rotateY(200deg) translateZ(50vh);
+}
+.it7 {
+	transform: rotateY(240deg) translateZ(50vh);
+}
+.it8 {
+	transform: rotateY(280deg) translateZ(50vh);
+}
+.it9 {
+	transform: rotateY(320deg) translateZ(50vh);
+}
+.it10 {
+	transform: rotateY(360deg) translateZ(50vh);
+}
+.carousel-item1 {
+	box-shadow: 0px 0px 20px 0px #000;
+	border-radius: 3vh;
+}
+.carousel1 .img1 {
+	transition: ease-in-out 0.5s;
+	width: 100%;
+	height: 100%;
+}
+.carousel1 .img1:hover {
+	transform: scale(1.1);
+	transition: all 0.5s;
+	position: absolute;
+}
+.carousel1:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+/* animation rotate */
+@keyframes rotate {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}
+

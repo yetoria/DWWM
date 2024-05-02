@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Dany</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1></h1>
+    
+    <form action="destination.html">
+
+<fieldset>
+    <legend>Vos données personnelles</legend>
+    <label for="Nom">Nom</label>
+    <input type="text" name="Nom" id="Nom">
+<br>
+    <label for="Prénom">Prénom</label>
+    <input type="text" name="Prénom" id="Prénom">
+<br>
+    <label for="Date de Naissance">Date de Naissance</label>
+    <input type="text" name="Date de Naissance" id="Date de Naissance">
+
+
+<fieldset>
+    <legend>Lieu de Naissance</legend>
+    <label for="lieu_seine_saint_denis">Seine-Saint-Denis</label>
+    <input type="radio" name="lieu_naissance" id="lieu_seine_saint_denis"  value="Seine-Saint-Denis">
+    <label for="lieu_reste_du_monde">Reste du monde</label>
+    <input type="radio" name="lieu_naissance" id="lieu_reste_du_monde" value="Reste du monde">
+</fieldset>
+
+
+<fieldset>
+    
+    <label for="adresse_postale">Adresse postale</label>
+    
+    <input type="text"></input>
+    
+<br>
+    <label for="code_postal">Code postal</label>
+    <input type="text" name="code_postal" id="code_postal">
+<br>
+    <label for="adresse_electronique">Adresse électronique</label>
+    <input type="email" id="adresse_electronique">
+<br>
+    <label for="page_perso">Page personnelle</label>
+    <input type="url" name="page_perso" id="page_perso">
+<br>
+    <label for="téléphone">Téléphone portable</label>
+    <input type="text" name="téléphone" id="téléphone">
+<br>
+    <label for="semestre">Semestre</label>
+    <select name="semestre" id="semestre">
+        <option value="S1">S1</option>
+        <option value="S2">S2</option>
+        <option value="S3">S3</option>
+        <option value="S4">S4</option>
+    </select>
+<br>
+    <label for="niv_html">Niveau en HTML</label>
+    <input type="range" name="niv_html" id="niv_html" min="0" max="10" step="1">
+</fieldset>
+
+<fieldset>
+    <legend>Connaissances</legend>
+    <label for="html">HTML</label>
+    <input type="checkbox" name="html" id="html" value="html">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="css" id="css" value="css">
+    <label for="formulaires">Formulaire</label>
+    <input type="checkbox" name="formulaires" id="formulaires" value="formulaires">
+    <label for="java">Javascript</label>
+    <input type="checkbox" name="java" id="java" value="java">
+    <label for="selectAll">Sélectionner tout</label>
+    <input type="checkbox" id="selectAll">
+    <script>
+        document.getElementById("selectAll").addEventListener("change", function() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = document.getElementById("selectAll").checked;
+            });
+        });
+    </script>
+<br>
+
+</fieldset>
+
+        <label for="Envoyer"></label>
+        <input type="submit" name="Envoyer" id="submit" value="Envoyer">
+</fieldset>
+</form>
+</body>
+</html>

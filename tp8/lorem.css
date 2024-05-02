@@ -1,0 +1,59 @@
+body {
+    font-family: 'Protest Revolution', sans-serif;
+    text-align: justify;
+    color: aliceblue;
+}
+
+html {
+    background-image: url('../5172658.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 50; /* Réduire l'opacité de l'image d'arrière-plan */
+}
+
+
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+}
+
+h2 {
+    text-decoration: underline;
+    color:darkcyan;
+}
+
+h3 {
+    font-style: italic;
+    color:darkslategray;
+}
+
+p {
+    text-indent: 1.5em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    margin-left: 20px;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0); /* Fond de navigation transparent */
+    z-index: 1000;
+    /* Pour s'assurer que le menu est au-dessus de tout autre contenu */
+    text-align: center;
+}
+
+.topbar {
+    text-align: center;
+    text-decoration: overline;
+    display: block;
+    color:deeppink;
+    font-size: large;
+}
+
+#Merci {
+    text-align: center;
+    font-variant: small-caps;
+    text-indent: -10px;
+}

@@ -1,0 +1,152 @@
+
+html{
+    background-color: gray; /* couleur du background (fond) */
+    
+}
+
+
+body{
+    /* background-image: url("images/fond.jpg"); tapissé image de fond */
+    border: 2px solid red; /* bordure de 2px pleine */
+    font-family:sans-serif; /* type de font du doc html en général dans html ou body */
+    width: 80%; /* le corps du document a une largeur de 80% */
+    margin-left: auto; /* externe : pour mettre le corps du doc aligné au centre il faut mettre margin left et right en auto */
+    margin-right: auto;
+    padding: 20px; /* interne :pour ne pas être accolé aux bords du texte il faut mettre un padding 20px */
+}
+
+h1{ /* titre principal */
+    font-size: 36pt; /* taille des titres principaux sera de taille 36px */
+    text-align: center; /* aligner le texte au centre */
+    color:#191970; /* couleur des textes h1 en couleur */
+    letter-spacing: 6px; /* les lettres h1 sont espacés de 6px */
+    text-transform: capitalize; /* première lettre en majuscule */
+
+    border: 5px groove; /* titre du docuement sera de taille 5px et de style groove */
+    background-color: #F0F8F8; /* couleur de fond des titres h1 */
+}
+
+h2{ /* les chapitres */
+    font-size: 24pt; /* taille des chapitres h2 sera de taille 24pt */
+    color: #B0C4DE; /* couleur des h2 en couleur */
+    letter-spacing: 2px; /* les lettres h2 seront espacés de 2px */
+    text-transform: capitalize; /* première lettre des h2 seront en majuscule */
+    border-bottom: 1px solid blueviolet; /* les chapitres sont entourés d'une bordure 1px pleine (solid) de couleur DCDCDC */
+    margin-left: -20px; /* -20px pour créer un décalage par rapport aux paragraphes. */
+}
+
+p{ /* les paragraphes */
+    text-align: justify; /* prendra la largeur de toute la page */
+    text-indent: 15px; /* la première ligne sera endentée de 15px */
+}
+
+p::first-letter { /* pseudo element -> la première lettre des paragraphes */
+    font-size: 150%; /* seront agrandit de 150% */
+    font-weight: bold; /* en gras */
+    font-style: italic; /* seront en italic */
+}
+
+
+
+
+
+
+a{ /* les liens */
+    color: #612345; /* la couleur des liens seront de couleur */
+}   
+
+a:link, a:active{ /* a:link: les liens non visités -- a:active selectionné */
+    text-decoration: none; /* les liens non visités et sélectionnés ne seront pas soulignés */
+}
+
+a:hover { /* passer la souris sur les liens */
+    color: blue; /* seront de couleur bleu */
+    font-weight: bold; /* en gras */
+    text-decoration: underline; /* seront soulignés */
+}
+
+li a:hover { /* les liens qu'on survole dans la liste */
+    font-weight: bold; /* seront en gras lors du survol */
+}
+
+li a:visited { /* les liens visités de la liste */
+    text-decoration: line-through; /* seront barrés */
+}
+
+li a{ /* liens dans une liste */
+    display: block; /* pouvoir cliquer en horizontale sur la ligne du lien cliquable */
+}
+
+
+
+
+li { /* liens des éléments de la liste */
+    font-size: 20pt; /* seront de taille 20pt */
+    color: #456123; /* de cette couleur */
+}
+
+ol { /* le style de liste ordonnée */
+    list-style-type: upper-roman; /* le style de liste */
+}
+
+table, td, th{ /* les tableaux */
+    border: 2px dotted blueviolet; /* entourer le tableau et ses cellules de 2px style dotted (pointillés) */
+    margin-left: auto; /* centrer le tableau au centre de la page */
+    margin-right: auto; /* externe par rapport à la table */
+    text-align: center; /* seront alignés au centre */
+}
+
+th { /* les cellules d'en-têtes */
+    letter-spacing: 3px; /* l'espacement entre les lettres des cellules d'en-têtes sera de 3px. */
+}
+
+acronym:hover { /* lorsque la souris passera sur un acronyme, les lettres seront de la même couleur que les liens */
+    color: #456123;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* TP6 */
+
+#span{
+font-style: italic;
+}
+
+#fpara { /* pour identifier l'id du document html tu fais id:... et pour l'identifier dans le css tu fais #) */
+font-style: italic;
+width: 90%; /* Largeur de 90% */
+margin-left: auto; /* Marge gauche automatique */
+margin-right: auto; /* Marge droite automatique, donc le paragraphe sera centré vu que les deux marges sont automatique */
+}
+
+.lsomm {
+font-style: italic; /* Texte en italique */
+text-align: right; /* Alignement à droite */
+text-decoration: none; /* Lien jamais souligné */
+}
+
+.lsomm a {
+    color: #4682B4; /* Couleur du texte */
+}
+
+#formulo {
+text-align: center; /* texte centré */
+text-transform: uppercase; /* texte en majuscule */
+}
+
+#wikipedia {
+font-size: 120%; /* taille du texte à 120% */
+font-weight: bold; /* texte en gras */
+font-style: italic; /* texte en italique */
+font-variant: small-caps; /* texte en petite majuscule */
+text-decoration: underline; /* souligné */
+text-align: right; /* aligné à droite */
+}

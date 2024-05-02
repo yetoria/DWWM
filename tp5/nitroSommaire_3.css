@@ -1,0 +1,46 @@
+body {
+    margin-top: 20px;
+}
+
+#sommaire{
+    display: none;
+}
+
+#divcontent {
+    background-color: #AAFFAA;
+    border: 3px dotted #555555;
+    width: 96%;
+}
+
+#divsomm ol {
+    list-style-type: none;
+   
+}
+
+#divsomm ol li {
+    text-align: center;
+    border: 1px solid black;
+    background-color: #DDDDDD;
+    width: 16%;
+    float: left;
+}
+
+#divsomm ol li:hover {
+    background-color: #CCCCCC;
+}
+
+#divsomm ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+.lsomm {
+    display: none;
+}
+
+#divsomm {
+    top: 0;
+    position: fixed;
+    width: 101%;
+    margin-left: -38px;
+}

@@ -1,0 +1,11 @@
+$font-size: 150px;
+$color1: red;
+$list-style: none;
+
+h1 {
+  font-size: #{$font-size};
+}
+
+li {
+  list-style: $list-style;
+}

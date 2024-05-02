@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trombinoscope</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sass.css">
+    <style>
+        .title-container {
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+
+        .image-container {
+            margin-bottom: 50px;
+        }
+
+        .image-container img {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Trombinoscope</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#image0">Image 0</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image10">Image 10</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image20">Image 20</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image30">Image 30</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image40">Image 40</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image50">Image 50</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image60">Image 60</a></li>
+                <li class="nav-item"><a class="nav-link" href="#image70">Image 70</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title-container">
+            <h1 class="text-center">Trombi des stars</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <p>Texte arbitraire</p>
+            </div>
+            
+            <div id="trombi" class="col-md-10">
+                <!-- <div class="row image-container">
+                    <div class="col-md-2"><img id="image0" src="./trombi/0-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/0.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/1-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/1.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/2-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/2.jpg" alt=""></div>
+                </div>
+                <div class="row image-container">
+                    <div class="col-md-2"><img src="./trombi/3-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/3.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/4-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/4.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/5-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/5.jpg" alt=""></div>
+                </div>
+                <div class="row image-container">
+                    <div class="col-md-2"><img src="./trombi/6-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/6.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/7-petit.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/7.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/8.jpg" alt=""></div>
+                    <div class="col-md-2"><img src="./trombi/8-petit.jpg" alt=""></div>
+                </div>
+                <div class="row image-container">
+                    <div class="row image-container">
+                        <div class="col-md-2"><img src="./trombi/9-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/9.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/10-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img id="image10" src="./trombi/10.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/11-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/11.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="col-md-2"><img src="./trombi/12-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/12.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/13-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/13.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/14-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/14.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="col-md-2"><img src="./trombi/15-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/15.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/16-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/16.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/17-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/17.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="col-md-2"><img src="./trombi/18-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/18.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/19-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/19.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/20-petit.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="col-md-2"><img id="image20" src="./trombi/20.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/21-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/21.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/22-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/22.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/23-petit.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="col-md-2"><img src="./trombi/23.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/24-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/24.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/25-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/25.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/26-petit.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="col-md-2"><img src="./trombi/26.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/27-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/27.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/28-petit.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/28.jpg" alt=""></div>
+                        <div class="col-md-2"><img src="./trombi/29-petit.jpg" alt=""></div>
+                    </div>
+                    <div class="row image-container">
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/29.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/30-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img id="image30" src="./trombi/30.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/31-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/31.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/32-petit.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/32.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/33-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/33.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/34-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/34.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/35-petit.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/35.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/36-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/36.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/37-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/37.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/38-petit.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/38.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/39-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/39.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/40-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img id="image40" src="./trombi/40.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/41-petit.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/41.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/42-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/42.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/43-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/43.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/44-petit.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/44.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/45-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/45.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/46-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/46.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/47-petit.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/47.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/48.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/49-petit.jpg" alt=""></div>
+                            <div class="col-md-2"><img id="image50" src="./trombi/50.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/51.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/52.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/53.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/54.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/55.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/56.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/57.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/58.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/59.jpg" alt=""></div>
+                            <div class="col-md-2"><img id="image60" src="./trombi/60.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/61.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/62.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/63.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/64.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/65.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/66.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/67.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/68.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/69.jpg" alt=""></div>
+                            <div class="col-md-2"><img id="image70" src="./trombi/70.jpg" alt=""></div>
+                        </div>
+                        <div class="row image-container">
+                            <div class="col-md-2"><img src="./trombi/71.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/72.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/73.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/74.jpg" alt=""></div>
+                            <div class="col-md-2"><img src="./trombi/75.jpg" alt=""></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                <script src="trombi.js"></script>
+</body>
+
+</html>

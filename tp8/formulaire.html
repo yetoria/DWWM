@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire exo 8</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+
+<body>
+    <h1>Informations personnelles</h1>
+    <form action="/traitement-du-formulaire" method="get">
+        <fieldset>
+            <legend>Etat civil</legend>
+
+            <label for="civilité">Civilité</label>
+            <br>
+            <select name="civilité" id="civilité">
+                <option value="M.">M.</option>
+                <option value="Mme">Mme</option>
+                <option value="Mlle">Mlle</option>
+            </select>
+            <br>
+            <label for="nom">Nom</label>
+            <br>
+            <input type="text" name="nom" id="nom">
+            <br>
+            <label for="prénom">Prénom</label>
+            <br>
+            <input type="text" name="prénom" id="prénom">
+            <br>
+            <label for="dateNaissance">Date de Naissance</label>
+            <br>
+            <input type="date" name="dateNaissance" id="dateNaissance">
+            <br>
+            <label for="communeNaissance">Commune de naissance</label>
+            <br>
+            <input type="text">
+            <br>
+            <select name="communeNaissance" id="communeNaissance">
+                <option value="paris">Paris</option>
+                <option value="londres">Londres</option>
+                <option value="new-york">New York</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Coordonnées</legend>
+
+            <label for="tel">Téléphone</label>
+            <br>
+            <input type="tel" name="tel" id="tel">
+            <br>
+            <label for="mail">Courriel</label>
+            <br>
+            <input type="email" name="mail" id="mail">
+            <br>
+            <label for="web">Site Web</label>
+            <br>
+            <input type="url" name="web" id="web">
+        </fieldset>
+
+        <fieldset>
+            <legend class="meow">Compétences</legend>
+            <label>Niveau d'anglais :</label>
+            <input type="checkbox" name="niveauAnglais" id="c1">
+            <label for="c1">C1</label>
+            <input type="checkbox" name="niveauAnglais" id="b1">
+            <label for="b1">B1</label>
+            <input type="checkbox" name="niveauAnglais" id="a1">
+            <label for="a1">A1</label>
+            <br>
+            <label>Langages Informatiques :</label>
+            <input type="checkbox" name="langagesInformatiques" id="langagesInformatiques">
+            <label for="HTML">HTML</label>
+            <input type="checkbox">
+            <label for="css">CSS</label>
+            <input type="checkbox">
+            <label for="javascript">JavaScript</label>
+            <label for="PHP">PHP</label>
+            <input type="checkbox">PHP</input>
+
+        </fieldset>
+
+        <input type="submit" name="envoyer" id="submit" value="Envoyer">
+        <input type="reset" name="effacer" id="effacer" value="Effacer">
+    </form>
+</body>
+
+</html>

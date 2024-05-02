@@ -1,0 +1,31 @@
+$cpt: 1;
+.button {
+    font-family: sans-serif;
+    border: none;
+    padding: 10px 10px 10px 52px;
+    background-color: #fe0;
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+
+&:hover {
+    background-color: lighten(#fe0, 20%); 
+
+}
+&::before{
+    top: 10px;
+    left: 15px;
+    position: absolute;
+    content: " ";
+    background-image: url(sprite.png);
+    width: 32px;
+    height: 32px;
+
+}
+}
+@for $cpt from 1 through 5 {
+    a:nth-child(#{$cpt})::before{
+        background-position-x: -32px * ($cpt - 1);
+    }
+}

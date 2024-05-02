@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'protest_riotregular';
+    src: url('protestriot-regular-webfont.woff2') format('woff2'),
+         url('protestriot-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'protest_riotregular';
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkcyan;
+}
+
+h2 {
+    font: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+time {
+    font-style: italic;
+    color: #777;
+}
+
+q {
+    display: block;
+    font-style: italic;
+    padding-left: 20px;
+    border-left: 3px solid purple;
+}
+
+cite {
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+}

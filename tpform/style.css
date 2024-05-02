@@ -1,0 +1,100 @@
+   
+    body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: gray;
+        background-color: #151B22;
+        background-image: url(./images/Formes\ héros\ agence\ digitale\ G7.svg);
+    }
+
+    legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: aliceblue;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="text"],[type="textarea"],[type="url"], [type="email"]    {
+        background-color: #151B22; /* Couleur de fond */
+        border: 1px solid white; /* Bordure */
+        border-radius: 5px; /* Coins arrondis */
+        padding: 5px; /* Rembourrage */
+        width: 100%; /* Largeur */
+        box-sizing: border-box; /* Boîte de modèle */
+        font-size: 20px; /* Taille de police */
+    }
+
+    input[type="submit"] {
+        display:block ;
+        width: 100%;
+        padding: 10px;
+        background-color:darkmagenta;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px black;
+    }
+
+    input[type="submit"]:hover {
+        background-color: darkblue;
+    }
+
+    select#semestre {
+        /* Styles spécifiques au menu déroulant "semestre" */
+        background-color: whitesmoke; /* Couleur de fond */
+        border: 1px solid #ccc; /* Bordure */
+        border-radius: 5px; /* Coins arrondis */
+        padding: 5px; /* Rembourrage */
+        width: 100%; /* Largeur */
+        box-sizing: border-box; /* Boîte de modèle */
+        font-size: 16px; /* Taille de police */
+    }
+
+
+    input[type="checkbox"] {
+        /* Styles pour les cases à cocher */
+        width: 20px; /* Largeur de la case à cocher */
+        height: 20px; /* Hauteur de la case à cocher */
+        border: 2px solid #ccc; /* Bordure de la case à cocher */
+        border-radius: 50%; /* Arrondi la case à cocher pour créer un cercle */
+        margin-right: 10px; /* Marge à droite pour espacement */
+        cursor: pointer; /* Curseur au survol */
+    }
+
+    /* Style pour les cases à cocher cochées */
+    input[type="checkbox"]:checked {
+        background-color: whitesmoke; /* Couleur de fond lorsque cochée */
+    }
+
+    input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    }
+
+    input[type="range"] {
+        /* Styles pour le curseur */
+        height: 20px; /* Hauteur du curseur */
+        background-color: #007bff; /* Couleur du curseur */
+        border: none; /* Supprime la bordure du curseur */
+        border-radius: 50%; /* Arrondi le curseur pour créer un cercle */
+        cursor: pointer; /* Curseur au survol */
+    }
+
+    input[type="range"] {
+        /* Styles pour le champ de type "range" */
+        width: 30%; /* Largeur du champ */
+        height: 10px; /* Hauteur du champ */
+        margin-bottom: 10px; /* Marge en bas pour l'espacement */
+        }

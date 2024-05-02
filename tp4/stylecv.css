@@ -1,0 +1,100 @@
+html {
+    /* color: aliceblue; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(./images/Programmers\ Wallpaper.jpg) */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+address {
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Style pour les liens */
+a {
+    color: #007bff; /* Couleur des liens */
+    text-decoration: none; /* Aucun soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Style pour les sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Style pour les listes */
+ul, ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Style pour l'image */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Style pour le texte en gras */
+strong {
+    font-weight: bold;
+}
+
+
+
+/* Style pour les compétences */
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Style pour le lien du sommaire */
+address a {
+    font-size: 14px;
+}
+
+/* Style pour les titres */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+}
+

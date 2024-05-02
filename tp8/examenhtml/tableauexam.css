@@ -1,0 +1,17 @@
+table td {
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+}
+table { 
+    border-collapse: collapse;
+    
+}
+
+td {
+    text-align: center;
+}
+
+td:hover {
+    background-color: red;
+}
